@@ -1,48 +1,53 @@
-package geometryProcessor;
+package debug.geometryProcessor;
 
 public class Circle implements Shape {
 
-    double length;
-    double area;
-    String colour;
-    String name;
+  double length;
+  double area;
+  String colour;
+  String name;
 
-    public Circle(double l, String c, String n) {
-        length = l;
-        colour = c;
-        area = Math.PI * (l / 2) * (l / 2);
-        name = n;
-    }
+  public Circle(double l, String c, String n) {
+    length = l;
+    colour = c;
+    area = Math.PI * (l / 2) * (l / 2);
+    name = n;
+  }
 
-    public String getShape() {
-        return "Circle";
-    }
+  public String getShape() {
+    return "Circle";
+  }
 
-    public String getName() {
-        return colour;
-    }
 
-    @Override
-    public String getColour() {
-        return colour;
-    }
+  public String getName() {
+    return name;
+  }
 
-    //Get the area of this circle
-    public double getArea() {
-        return area;
-    }
+  @Override
+  public String getColour() {
+    return colour;
+  }
 
-    public void setLength(double l) {
-        length = l;
-        area = Math.PI * (l / 2) * (l / 2);
-    }
+  public double getLength() {
+    return length;
+  }
 
-    public void setColour(String c) {
-        colour = c;
-    }
+  //Get the area of this circle
+  public double getArea() {
+    return area;
+  }
 
-    public void setName(String n) {
-        name = n;
-    }
+  public void setLength(double l) {
+    length = l;
+    area = Math.PI * (l / 2) * (l / 2);
+  }
+
+  public void setColour(String c) {
+    colour = c;
+  }
+
+  public void setName(String n) {
+    name = n;
+  }
 
 }

@@ -1,46 +1,50 @@
-package geometryProcessor;
+package debug.geometryProcessor;
 
 public class Triangle implements Shape {
 
-    double length;
-    double area;
-    String colour;
-    String name;
+  double length;
+  double area;
+  String colour;
+  String name;
 
-    public Triangle(double l, String c, String n) {
-        length = l;
-        colour = c;
-        area = Math.sqrt(3) * l * l / 4;
-        name = n;
-    }
+  public Triangle(double l, String c, String n) {
+    length = l;
+    colour = c;
+    area = Math.sqrt(3) * l * l / 4;
+    name = n;
+  }
 
-    public String getShape() {
-        return "Triangle";
-    }
+  public double getLength() {
+    return length;
+  }
 
-    public String getName() {
-        return name;
-    }
+  public String getShape() {
+    return "Triangle";
+  }
 
-    public String getColour() {
-        return colour;
-    }
+  public String getName() {
+    return name;
+  }
 
-    public double getArea() {
-        return area;
-    }
+  public String getColour() {
+    return colour;
+  }
 
-    public void setLength(double l) {
-        length = l;
-        area = Math.sqrt(3) * l * l / 4;
-    }
+  public double getArea() {
+    return area;
+  }
 
-    public void setColour(String c) {
-        colour = c;
-    }
+  public void setLength(double l) {
+    length = l;
+    area = Math.sqrt(3) * l * l / 4;
+  }
 
-    public void setName(String n) {
-        name = n;
-    }
+  public void setColour(String c) {
+    colour = c;
+  }
+
+  public void setName(String n) {
+    name = n;
+  }
 
 }
